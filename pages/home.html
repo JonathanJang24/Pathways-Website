@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="../styles/homeStyle.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="../utils/script.js"></script>
+    <script src="../utils/navScript.js"></script>
     <title>Pathways | Home</title>
 </head>
 
 <body>
+    <!-- navbar -->
     <nav class="topnav" id="navBar">
         <a href="./home.html" id="pathways-logo"><img src="../public/pathwayslogo.png" alt="pathways logo"></a>
         <a href="./home.html" id="nav-home" class="active">Home</a>
@@ -27,13 +28,49 @@
         </a>
     </nav>
 
-    <section id="welcome-flex">
-        <div id="welcome">
-            <h1 id="welcome-title">Welcome to Pathways</h1>
-            <p id="welcome-text">We welcome you to come as you are and connect with God through a blend of traditional and contemporary worship... and connect with your neighbor as we break bread in fellowship!</p>
+    <section>
+        <div id="welcome-container">
+            <img src="../public/home-picture1.png" alt="Bible Study Group Picture">
+            <h1>Welcome to Pathways</h1>
+            <p>A diverse community of individuals centered on serving Christ</p>
         </div>
-        <img src="https://static.wixstatic.com/media/24c361_b356995194c24f5fb35c45606dd1884a~mv2.png/v1/fill/w_694,h_382,al_c,lg_1,q_85/24c361_b356995194c24f5fb35c45606dd1884a~mv2.webp" id="welcome-img" alt="">
     </section>
+
+    <br>
+    <br>
+    <br>
+
+    <section>
+        <div id="intro-flex">
+            <img src="../public/home-picture2.png" alt="Children in circle">
+            <div id="intro-text">We welcome ALL to come worship and praise the one true God through a blend of traditional and contemporary worship. Jesus is calling for you.
+            
+
+"Come to me, all you who are weary and burdened, and I will give you rest." Matthew 11:23 (NIV) </div>
+        </div>
+    </section>
+    
+    <br>
+    <br>
+    <br>
+
+    <section>
+    <div id="sermon-flex">
+        <div id="video-label">
+            We stream our services weekly on our <a href="https://www.facebook.com/pathwayshouston/?ref=page_internal">Facebook</a> to accomodate for those unable to attend. However, we encourage you to attend in person if possible!
+        </div>
+
+        <!-- develop script to actively scrape for new videos to automatically embed latest video -->
+        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fpathwayshouston%2Fvideos%2F220409606933370%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe> 
+    </div>
+    </section>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#012f6b" fill-opacity="1" d="M0,256L13.3,250.7C26.7,245,53,235,80,202.7C106.7,171,133,117,160,80C186.7,43,213,21,240,26.7C266.7,32,293,64,320,69.3C346.7,75,373,53,400,90.7C426.7,128,453,224,480,250.7C506.7,277,533,235,560,229.3C586.7,224,613,256,640,250.7C666.7,245,693,203,720,170.7C746.7,139,773,117,800,106.7C826.7,96,853,96,880,112C906.7,128,933,160,960,192C986.7,224,1013,256,1040,229.3C1066.7,203,1093,117,1120,101.3C1146.7,85,1173,139,1200,144C1226.7,149,1253,107,1280,122.7C1306.7,139,1333,213,1360,218.7C1386.7,224,1413,160,1427,128L1440,96L1440,320L1426.7,320C1413.3,320,1387,320,1360,320C1333.3,320,1307,320,1280,320C1253.3,320,1227,320,1200,320C1173.3,320,1147,320,1120,320C1093.3,320,1067,320,1040,320C1013.3,320,987,320,960,320C933.3,320,907,320,880,320C853.3,320,827,320,800,320C773.3,320,747,320,720,320C693.3,320,667,320,640,320C613.3,320,587,320,560,320C533.3,320,507,320,480,320C453.3,320,427,320,400,320C373.3,320,347,320,320,320C293.3,320,267,320,240,320C213.3,320,187,320,160,320C133.3,320,107,320,80,320C53.3,320,27,320,13,320L0,320Z"></path>
+</svg>
+    <br>
+    <br>
+    <br>
 
     <!-- below is boilerplate for footer and copyright code -->
     <footer>
@@ -57,18 +94,25 @@
         </div>
         <div id="footer-contact">
             <h2>Contact Info</h2>
-
             <p>5900 Pinemont Dr Houston, Tx 77092</p>
+            <br>
             <a href="mailto:pathwayshouston@gmail.com">pathwayshouston@gmail.com</a>
+            <br>
+            <br>
+
+            <a href="https://www.instagram.com/pathwayshouston/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/pathwayshouston/?ref=page_internal"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.youtube.com/user/PathwaysHouston"><i class="fa fa-youtube"></i></a>
+
         </div>
         <div id="footer-newsletter">
             <h2>Subscribe to Our Newsletter</h2>
 
             <!-- learn php for processing input -->
             <form action="">
-                <input type="text" placeholder="Name"><br><br>
-                <input type="text" placeholder="Email Address"><br><br>
-                <input type="button" value="Subscribe"><br>
+                <input type="text" class="newsletter-input" placeholder="Name"><br><br>
+                <input type="text" class="newsletter-input" placeholder="Email Address"><br><br>
+                <input type="button" id="subscribe" value="Subscribe"><br>
             </form>
         </div>
     </footer>

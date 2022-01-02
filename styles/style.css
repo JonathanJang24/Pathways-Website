@@ -1,13 +1,25 @@
 html, body{
     margin: 0;
-    font-family: quicksand;
+    font-family: Quicksand;
     border: 0;
+    animation: fadeIn linear 1s
 }
 
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1
+    }
+}
 
 .topnav{
     margin:0;
     width:100%;
+    display: flex;
+
+    align-items: center;
     overflow:hidden;
     background-color: #0096c7;
     position: sticky;
@@ -23,16 +35,22 @@ html, body{
     display: block;
     color: #fff;
     text-align: center;
-    padding: 14px 16px;
-    margin-top: 15px;
+    padding: 8px 14px;
     text-decoration:none;
     text-transform:capitalize;
-    font-size: 17px;
+    font-size: 15px;
+    transition: .5s
 }
 #pathways-logo{
     margin-top:0;
-    margin-left:20%
+    margin-left:20%;
+    padding: 10px
 }
+
+#pathways-logo img{
+    height: 35px
+}
+
 .topnav a:hover{
     background: #00b4d8;
 }
@@ -52,6 +70,7 @@ html, body{
 }
 
 @media screen and (max-width: 600px){
+    .topnav{display:block}
     .topnav.responsive {position:relative}
     .topnav a{
         margin-top: 0;
@@ -73,14 +92,14 @@ html, body{
 
 
 footer{
-    background: #023e8a;
+    background: #012f6b;
     margin: 0;
     border:0;
     color:white;
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    align-items: center;
+    align-items:baseline
 
 }
 footer h2{
@@ -97,12 +116,45 @@ footer p{
 footer div h2{
     text-transform: uppercase;
 }
+#subscribe{
+    background-color: rgb(75, 59, 59);
+    padding: 5px 15px;
+    font-family: inherit;
+    text-transform: capitalize;
+    border: none;
+    font-weight: bold;
+    letter-spacing:1pt;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: all .5s;
+}
+#subscribe:hover{
+    background-color: rgb(165, 165, 165);
+}
+.newsletter-input{
+    color: white;
+    background-color: rgb(54, 54, 54);
+    border: gray 2px solid;
+    font-family: inherit;
+    max-width: 100%;
+}
+.newsletter-input::placeholder{
+    font-family: inherit;
+    color: white;
+}
 #footer-contact p{
     margin-top: 10px
 }
 #footer-contact a{
     color: white;
     font-size: 10px;
+}
+#footer-contact i{
+    font-size: 24px;
+}
+#footer-contact a i:visited{
+    font-size: 24px;
 }
 #footer-hours{
     grid-column: 2/3;
