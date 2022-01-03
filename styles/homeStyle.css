@@ -23,11 +23,11 @@
 }
 
 #welcome-container p{
+    color: white;
     font-family: monospace;
-    color:white;
-    top: 475px;
     position: absolute;
-    font-size: 20px;
+    padding-top: 120px;
+    font-size: 1.5vw;
 }
 
 @keyframes typing{
@@ -109,5 +109,12 @@ svg{
 @media screen and (max-width: 1440px){
     svg{
         display: none;
+    }
+}
+
+@media screen and (max-width: 760px){
+    #welcome-container p{
+        padding-top: 80px;
+        font-size: 2vw;
     }
 }
