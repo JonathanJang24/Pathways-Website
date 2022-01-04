@@ -42,12 +42,12 @@ html, body{
     transition: .5s
 }
 #pathways-logo{
-    margin-top:0;
-    margin-left:20%;
-    padding: 10px
+    padding: 10px;
+    margin-left:30%;
 }
 
 #pathways-logo img{
+
     height: 35px
 }
 

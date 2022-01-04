@@ -12,7 +12,7 @@
     text-transform: uppercase;
 }
 
-section img{
+#top-container img{
     z-index: -1;
     width: 100%;
     filter: brightness(40%)
@@ -23,7 +23,7 @@ section img{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px
+    gap: 100px;
 }
 
 #belief-text{
@@ -53,11 +53,6 @@ section img{
     margin:10px 0 0 0
 }
 
-#belief-text h6{
-    margin: 10px 0 0 0;
-    font-size: 1vw;
-    font-weight: normal;
-}
 #belief-container img{
     max-width:20%;
 }
@@ -73,9 +68,10 @@ section img{
     }
 }
 
+
 #about-grid{
     display: grid;
-    grid-template-columns: auto 300px 300px 300px auto;
+    grid-template-columns: auto repeat(3, 300px) auto;
     gap: 50px;
     align-items: baseline;
     margin: 0;
@@ -97,12 +93,80 @@ section img{
 #about-grid div{
     padding: 0;
     margin: 0;
-    height: 400px;
+    height: 500px;
     width: 300px;
     background-color: lightblue;
     transition: transform .25s ease-out;
+    text-align: center;
+    color: white
 }
-
+#about-grid div img{
+    width: 100%
+}
+#about-grid h1{
+    font-weight: lighter;
+    font-size: 28px;
+    padding: 0 5px;
+}
+#about-grid p{
+    font-size: 14px;
+    padding: 0 5px;
+}
 #about-grid div:hover{
     transform: scale(110%);
+}
+
+@media screen and (max-width:1060px){
+    #about-grid div{
+        height: 300px;
+        width: 300px;
+        margin:auto;
+    }
+    #about-grid{
+        align-items: center;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, 300px);
+    }
+    #cong-box{
+        grid-column: 1;
+        grid-row: 1/2;
+    }
+    #worsh-box{
+        grid-column: 1;
+        grid-row: 2/3;
+    }
+    #con-box{
+        grid-column: 1;
+        grid-row: 3/4;
+    }
+    #about-grid h1{
+        font-size: 16px;
+    }
+    #about-grid p{
+        font-size: 10px;
+    }
+}
+
+#leadership{
+    text-align: center;
+    margin: 100px auto 50px auto;
+    font-weight: bold;
+    background: rgba(11, 166, 255, 0.425);
+    padding: 0;
+    border: none;
+    width: 300px;
+    font-size: 50px;
+}
+
+.pastor-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pastor-container img{
+    max-width: 10%;
+}
+
+.other{
+    transform: scale(200%);
 }

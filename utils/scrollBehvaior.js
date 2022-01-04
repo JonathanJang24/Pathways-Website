@@ -1,5 +1,14 @@
-document.addEventListener("scroll", () => {
-    document.documentElement.dataset.scroll = window.scrollY;
-})
+window.addEventListener("scroll", function () {
 
-console.log(window.scrollY)
+    let test = document.querySelector("#leadership");
+    if (window.scrollY >= 700) {
+        console.log("passed");
+        test.style.width = Math.round(window.scrollY / 1) + 'px';
+    }
+    else {
+        test.classList.remove("other")
+    }
+}
+);
+
+
