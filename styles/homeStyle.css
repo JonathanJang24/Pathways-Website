@@ -26,7 +26,7 @@
     color: white;
     font-family: monospace;
     position: absolute;
-    padding-top: 120px;
+    padding-top: 140px;
     font-size: 1.5vw;
 }
 
@@ -46,7 +46,7 @@
     justify-content: center;
     gap: 1vw;
     color: white;
-
+    margin: 150px 0
 }
 #intro-flex img{
     width: 40%
@@ -54,10 +54,10 @@
 #intro-text{
     background: navy;
     padding:15px;
-    height: 400px;
-    width: 200px;
+    height: 500px;
+    width: 400px;
     overflow-wrap: break-word;
-    font-size: 20px;
+    font-size: 32px;
     white-space: pre-wrap;
 }
 
@@ -70,11 +70,11 @@
 }
 
 #video-label{
-    width: 200px;
+    width: 400px;
     height: 250px;
     background:rgb(55, 80, 161);
     padding: 15px;
-    font-size: 20px;
+    font-size: 32px;
 }
 
 #video-label a{
@@ -99,19 +99,24 @@
 
     }
 }
-
-svg{
-    position: absolute;
-    top:210%;
-    z-index: -1;
-}
-
 @media screen and (max-width: 1440px){
     svg{
         display: none;
     }
 }
-
+@media screen and (max-width: 1000px){
+    #intro-text{
+        font-size: 16px;
+        width:200px;
+        height:fit-content
+    }
+    #video-label{
+        font-size: 22px;
+        height: fit-content;
+        width: 200px
+    }
+    
+}
 @media screen and (max-width: 760px){
     #welcome-container p{
         padding-top: 80px;

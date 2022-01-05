@@ -57,24 +57,12 @@
     max-width:20%;
 }
 
-@media screen and (max-width:600px){
-    #belief-container{
-        gap: 10px
-    }
-    #belief-text{
-        height:200px;
-        width:200px;
-        font-size: 10px;
-    }
-}
-
-
 #about-grid{
     display: grid;
-    grid-template-columns: auto repeat(3, 300px) auto;
+    grid-template-columns: auto repeat(3, 400px) auto;
     gap: 50px;
     align-items: baseline;
-    margin: 0;
+    margin: 150px 0;
     padding: 0;
 }
 
@@ -93,8 +81,8 @@
 #about-grid div{
     padding: 0;
     margin: 0;
-    height: 500px;
-    width: 300px;
+    height: 700px;
+    width: 400px;
     background-color: lightblue;
     transition: transform .25s ease-out;
     text-align: center;
@@ -105,12 +93,12 @@
 }
 #about-grid h1{
     font-weight: lighter;
-    font-size: 28px;
-    padding: 0 5px;
+    font-size: 42px;
+    margin: 20px 0;
 }
 #about-grid p{
-    font-size: 14px;
-    padding: 0 5px;
+    font-size: 20px;
+    margin: 5px
 }
 #about-grid div:hover{
     transform: scale(110%);
@@ -118,14 +106,14 @@
 
 @media screen and (max-width:1060px){
     #about-grid div{
-        height: 300px;
+        height: 400px;
         width: 300px;
         margin:auto;
     }
     #about-grid{
         align-items: center;
         grid-template-columns: auto;
-        grid-template-rows: repeat(3, 300px);
+        grid-template-rows: repeat(3, 400px);
     }
     #cong-box{
         grid-column: 1;
@@ -140,33 +128,93 @@
         grid-row: 3/4;
     }
     #about-grid h1{
-        font-size: 16px;
+        font-size: 18px;
     }
     #about-grid p{
-        font-size: 10px;
+        font-size: 13px;
     }
 }
 
 #leadership{
     text-align: center;
-    margin: 100px auto 50px auto;
+    margin: 50px auto;
     font-weight: bold;
     background: rgba(11, 166, 255, 0.425);
-    padding: 0;
-    border: none;
-    width: 300px;
+    width: fit-content;
     font-size: 50px;
+    color: white;
 }
 
 .pastor-container{
     display: flex;
-    align-items: center;
+    margin: 25px auto;
     justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background: rgb(146, 166, 255);
+    padding: 25px;
+    color:white;
+    width: fit-content
 }
 .pastor-container img{
-    max-width: 10%;
+    width: 200px
+}
+.pastor-text{
+    width: 500px;
+}
+.pastor-text h1{
+    font-size: 30px;
+    margin: 5px 0;
+}
+.pastor-text h2{
+    font-size: 20px;
+    margin: 5px 0;
+}
+.pastor-text p{
+    margin: 5px 0;
 }
 
-.other{
-    transform: scale(200%);
+@media screen and (max-width:900px){
+    .pastor-container{
+        width: 400px
+    }
+    .pastor-container img{
+        width: 100px;
+        height: 100px;
+    }
+    .pastor-container p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:600px){
+    #belief-container{
+        gap: 10px
+    }
+    .pastor-container{
+        gap: 10px;
+    }
+    .pastor-text{
+        width: 300px
+    }
+    .pastor-container img{
+        width: 100px;
+    }
+    .pastor-container h1{
+        font-size: 12px;
+    }
+    .pastor-container h2{
+        font-size: 10px;
+    }
+    .pastor-container p{
+        font-size: 8px;
+    }
+    #belief-text{
+        height:200px;
+        width:200px;
+        font-size: 10px;
+    }
+    #top-container img{
+        width: 200%
+    }
 }
