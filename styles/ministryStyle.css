@@ -1,0 +1,174 @@
+body{
+    background: rgb(54, 54, 54)
+}
+
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 50px 0 200px 0;
+}
+.banner-container h1{
+    font-size: 64px;
+    margin: 25px 0
+}
+.banner-container p{
+    font-size: 48px;
+    margin: 10px 10vw;
+}
+
+.ministry-container{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 400px auto 400px auto 400px;
+    grid-template-rows: 400px 300px 400px 300px 400px 300px 400px 300px 400px 300px 400px 300px 400px;
+}
+.line{
+    background: blanchedalmond;
+    grid-row: 2;
+    grid-column: 3;
+    width: 5px;
+    margin: 0 auto;
+}
+.hline{
+    background:rgb(163, 163, 163);
+    grid-row: 1;
+    grid-column: 2;
+    height: 5px;
+    margin: auto 0;
+}
+.size{
+    width: 400px;
+}
+#wc-pic{
+    grid-row: 1;
+    grid-column: 3;
+    overflow: hidden;
+}
+#w-pic{
+    grid-row: 3;
+    grid-column: 3;
+    overflow: hidden;
+}
+#fp-pic{
+    grid-row: 5;
+    grid-column: 3;
+    overflow: hidden;
+}
+#d-pic{
+    grid-row: 7;
+    grid-column: 3;
+    overflow: hidden;
+}
+#c-pic{
+    grid-row: 9;
+    grid-column: 3;
+    overflow: hidden;
+}
+#y-pic{
+    grid-row: 11;
+    grid-column: 3;
+    overflow: hidden;
+}
+#lp-pic{
+    grid-row: 13;
+    grid-column: 3;
+    overflow: hidden;
+}
+
+
+.text-box{
+    background: #7393B3;
+    height: 300px;
+    margin: auto 0;
+    color: white;
+    text-align: center;
+    padding:10px
+}
+.text-box h1{
+    font-size: 32px;
+}
+span{
+    font-style: italic;
+}
+#wc-text{
+    grid-row: 1;
+    grid-column: 1;
+}
+#w-text{
+    grid-column: 5;
+    grid-row: 3;
+}
+#fp-text{
+    grid-column: 1;
+    grid-row: 5;
+}
+#d-text{
+    grid-column: 5;
+    grid-row: 7;
+}
+#c-text{
+    grid-column: 1;
+    grid-row: 9;
+}
+#y-text{
+    grid-column: 5;
+    grid-row: 11;
+}
+#lp-text{
+    grid-column: 1;
+    grid-row: 13;
+}
+
+@media screen and (max-width:1320px){
+    .banner-container p{
+        font-size: 32px;
+    }
+    .size{
+        width: 300px
+    }
+    .text-box{
+        height: 200px;
+    }
+    .ministry-container{
+        grid-template-columns: 300px auto 300px auto 300px;
+        grid-template-rows: 200px 150px 200px 150px 200px 150px 200px 150px 200px 150px 200px 150px 200px;
+    }
+    .text-box h1{
+        font-size: 18px;
+    }
+    .text-box h2{
+        font-size: 14px;
+    }
+    .text-box p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:1040px){
+    .banner-container p{
+        font-size: 24px;
+    }
+    .size{
+        width: 150px
+    }
+    .text-box{
+        height: 150px;
+        padding: 0
+    }
+    .ministry-container{
+        grid-template-columns: 150px auto 150px auto 150px;
+        grid-template-rows: repeat(13, 150px)
+    }
+    .text-box h1{
+        font-size: 14px;
+    }
+    .text-box h2{
+        font-size: 12px;
+    }
+    .text-box p{
+        font-size: 8px;
+    }
+}
