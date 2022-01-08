@@ -15,33 +15,37 @@ body{
     font-size: 64px;
     margin: 25px 0
 }
+
 .banner-container p{
     font-size: 48px;
-    margin: 10px 10vw;
+    margin: 10px 8vw;
 }
 
 .ministry-container{
-    margin: 50px;
+    margin: 200px 50px;
     display: grid;
-    grid-template-columns: 400px auto 400px auto 400px;
+    grid-template-columns: 500px 1fr 400px 1fr 500px;
     grid-template-rows: 400px 300px 400px 300px 400px 300px 400px 300px 400px 300px 400px 300px 400px;
 }
 .line{
     background: blanchedalmond;
     grid-row: 2;
     grid-column: 3;
-    width: 5px;
+    width: 2px;
     margin: 0 auto;
 }
 .hline{
     background:rgb(163, 163, 163);
     grid-row: 1;
     grid-column: 2;
-    height: 5px;
+    height: 2px;
     margin: auto 0;
 }
 .size{
-    width: 400px;
+    width: 500px;
+}
+.isize{
+    width: 400px
 }
 #wc-pic{
     grid-row: 1;
@@ -78,18 +82,18 @@ body{
     grid-column: 3;
     overflow: hidden;
 }
-
-
+.text-box h1{
+    font-size: 32px;
+}
+.text-box p{
+    font-size: 20px;
+}
 .text-box{
     background: #7393B3;
     height: 300px;
     margin: auto 0;
     color: white;
     text-align: center;
-    padding:10px
-}
-.text-box h1{
-    font-size: 32px;
 }
 span{
     font-style: italic;
@@ -130,11 +134,14 @@ span{
     .size{
         width: 300px
     }
+    .isize{
+    width: 200px
+    }
     .text-box{
         height: 200px;
     }
     .ministry-container{
-        grid-template-columns: 300px auto 300px auto 300px;
+        grid-template-columns: 300px auto 200px auto 300px;
         grid-template-rows: 200px 150px 200px 150px 200px 150px 200px 150px 200px 150px 200px 150px 200px;
     }
     .text-box h1{
@@ -148,18 +155,23 @@ span{
     }
 }
 @media screen and (max-width:1040px){
+    .ministry-container{
+        margin: 25px;
+    }
     .banner-container p{
         font-size: 24px;
     }
     .size{
-        width: 150px
+        width: 200px;
+    }
+    .isize{
+    width: 150px
     }
     .text-box{
-        height: 150px;
-        padding: 0
+        height: 180px;
     }
     .ministry-container{
-        grid-template-columns: 150px auto 150px auto 150px;
+        grid-template-columns: 200px auto 1fr auto 200px;
         grid-template-rows: repeat(13, 150px)
     }
     .text-box h1{
@@ -169,6 +181,26 @@ span{
         font-size: 12px;
     }
     .text-box p{
-        font-size: 8px;
+        font-size:10px;
+    }
+}
+@media screen and (max-width:600px){
+    .ministry-container{
+        grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+    }
+    .size{
+        width:fit-content
+    }
+    .isize{
+        width:2fr
+    }
+    .text-box h1{
+        font-size: 14px;
+    }
+    .text-box h2{
+        font-size: 12px;
+    }
+    .text-box p{
+        font-size:1vw;
     }
 }

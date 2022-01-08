@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/cgStyle.css">
     <script src="../utils/navScript.js"></script>
+    <script src="../utils/modalScript.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Pathways | Connection Groups</title>
 </head>
@@ -25,19 +27,114 @@
         </a>
     </nav>
 
-    <h1>Northwest</h1>
+    <section>
+        <div class="cg-header">
+            <br>
+            <h1>Connection Groups</h1>
+            <p>Connection groups are small ministries for members to have personal fellowship through breaking bread and intentional conversations. These small groups not only help members grow in their faith, but are also a source of outreach into the community. Groups are roughly divided into geographical regions and meet according to their appropriate times.</p>
+            
+        </div>
+    </section>
 
-    <h1>Make it so</h1>
+    <section>
+        <div class="cg-grid">
+            <!-- When editing or appending new groups, order of classes and names must be exact as pre-existing format -->
+            <div class="nw grid-el">
+                <img src="../public/cg/northwest.png" alt="">
+            </div>
 
-    <h1>Coffee talk</h1>
+            <div class="modal nw-m">
+                <div class="modal-text">
+                    <span class="close">&times;</span>
+                    
+                    <h1>Northwest</h1>
+                    <h2>Led by: Greg Feigh</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere architecto, consequatur omnis unde dignissimos deleniti consectetur similique eaque aliquid voluptates?</p>
+                </div>
+            </div>
 
-    <h1>Chung and Celeste</h1>
+            <div class="mis grid-el">
+                <img src="../public/cg/make-it-soh.jpg" alt="">
+            </div>
 
-    <h1>Faithful Foodies</h1>
+            <div class="modal mis-m">
+                <div class="modal-text">
+                    <span class="close">&times;</span>
+                    <img src="../public/cg/make-it-soh.jpg" alt="">
+                    <h1>Make It So</h1>
+                    <h2>Led by: Ki Shin and Soojin Jang</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex facere vel consequuntur unde natus recusandae ad tempora enim! Provident, quam?
+                    </p>
+                </div>
+            </div>
 
-    <h1>Charles and Patricia</h1>
+            <div class="ct grid-el">
+                <img src="../public/cg/coffee-talk.png" alt="">
+            </div>
+
+            <div class="modal ct-m">
+                <div class="modal-text">
+                    <span class="close">&times;</span>
+                    <img src="../public/cg/coffee-talk.png" alt="">
+                    <h1>Coffee Talk</h1>
+                    <h2>Led by: Tim and Sharon Hattenbauch</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex facere vel consequuntur unde natus recusandae ad tempora enim! Provident, quam?
+                    </p>
+                </div>
+            </div>
+
+            <div class="cc grid-el">
+                <img src="../public/cg/chung.png" alt="">
+            </div>
+
+            <div class="modal cc-m">
+                <div class="modal-text">
+                    <span class="close">&times;</span>
+                    <img src="../public/cg/chung.png" alt="">
+                    <h1>Chung and Celeste</h1>
+                    <h2>Led by: Chung and Celeste</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex facere vel consequuntur unde natus recusandae ad tempora enim! Provident, quam?
+                    </p>
+                </div>
+            </div>
+
+            <div class="ff grid-el">
+                <img src="../public/cg/faithful-foodies.jpg" alt="">
+            </div>
+
+            <div class="modal ff-m">
+                <div class="modal-text">
+                    <span class="close">&times;</span>
+                    <img src="../public/cg/faithful-foodies.jpg" alt="">
+                    <h1>Faithful Foodies</h1>
+                    <h2>Led by: Joy Eng and Mary Cho</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex facere vel consequuntur unde natus recusandae ad tempora enim! Provident, quam?
+                    </p>
+                </div>
+            </div>
+
+            <div class="cp grid-el">
+                <img src="../public/cg/charles.png" alt="">
+            </div>
+
+            <div class="modal cp-m">
+                <div class="modal-text">
+                    <span class="close">&times;</span>
+                    <img src="../public/cg/charles.png" alt="">
+                    <h1>Charles and Patricia CG</h1>
+                    <h2>Led by: Charles and Patricia</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex facere vel consequuntur unde natus recusandae ad tempora enim! Provident, quam?
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <br>
     
-    <!-- below is boilerplate for footer and copyright code -->
+    <!-- footer and copyright boilerplate -->
     <footer>
         <div id="footer-hours">
             <h2>Hours</h2>
@@ -52,7 +149,7 @@
             <p>every Sunday at 11:00am</p>
 
             <h6>food pantry</h6>
-            <p>every Monday, Tuesday, Friday</p>
+            <p>every Thursday</p>
             <p>from 10:00am to noon</p>
             <p>📞 713-957-3383</p>
             <br>
@@ -62,6 +159,13 @@
             <p>5900 Pinemont Dr Houston, Tx 77092</p>
             <br>
             <a href="mailto:pathwayshouston@gmail.com">pathwayshouston@gmail.com</a>
+            <br>
+            <br>
+
+            <a href="https://www.instagram.com/pathwayshouston/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/pathwayshouston/?ref=page_internal"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.youtube.com/user/PathwaysHouston"><i class="fa fa-youtube"></i></a>
+
         </div>
         <div id="footer-newsletter">
             <h2>Subscribe to Our Newsletter</h2>

@@ -18,7 +18,7 @@ html, body{
     margin:0;
     width:100%;
     display: flex;
-
+    opacity: 90%;
     align-items: center;
     overflow:hidden;
     background-color: #0096c7;
@@ -47,7 +47,6 @@ html, body{
 }
 
 #pathways-logo img{
-
     height: 5vh
 }
 

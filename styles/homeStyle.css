@@ -49,16 +49,17 @@
     margin: 150px 0
 }
 #intro-flex img{
-    width: 40%
+    width: 500px;
+    box-shadow: -30px -30px navy;
 }
 #intro-text{
-    background: navy;
-    padding:15px;
-    height: 500px;
-    width: 400px;
+    padding:25px;
+    height: 300px;
+    width: 500px;
     overflow-wrap: break-word;
-    font-size: 32px;
+    font-size: 28px;
     white-space: pre-wrap;
+    background: navy
 }
 
 #sermon-flex{
@@ -84,10 +85,16 @@
     color: rgb(181, 201, 214);
 }
 #sermon-flex iframe{
-    max-width: 50%;
+    box-shadow: 30px -30px rgb(55, 80, 161);
 }
 
 @media screen and (max-width: 600px){
+    #welcome-container p{
+        padding-top: 80px;
+    }
+    #intro-flex{
+        flex-wrap: wrap;
+    }
     #intro-text{
         font-size: 12px;
         height: 200px;
@@ -96,30 +103,30 @@
     #video-label{
         font-size: 12px;
         height: 150px;
-
+        width: 300px;
     }
-}
-@media screen and (max-width: 1440px){
-    svg{
-        display: none;
+    #sermon-flex{
+        flex-wrap: wrap;
+        gap: 50px;
     }
 }
 @media screen and (max-width: 1000px){
     #intro-text{
         font-size: 16px;
-        width:200px;
+        width:300px;
         height:fit-content
+    }
+    #intro-flex img{
+        width: 300px
     }
     #video-label{
         font-size: 20px;
-        height: fit-content;
+        height: 250px;
         width: 200px
     }
-    
-}
-@media screen and (max-width: 760px){
-    #welcome-container p{
-        padding-top: 80px;
-        font-size: 2vw;
+    #sermon-flex iframe{
+        width: 400px;
+        height: 224px;
     }
+    
 }
