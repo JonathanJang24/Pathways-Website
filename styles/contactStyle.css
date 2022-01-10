@@ -1,3 +1,120 @@
-.map-container{
-    text-align: center;
+*{
+    box-sizing: border-box;
+}
+.intro-container{
+    margin-top: 0;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intro-container h1{
+    position: absolute;
+    font-size: 64px;
+    background: rgba(0,0,0,.7);
+    font-family: monospace;
+}
+.intro-container img{
+    width: 100%;
+    margin-top: 0;
+    z-index: -1;
+    filter: brightness(70%);
+}
+.contact-flex{
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw
+}
+.text-box{
+    width: fit-content;
+    height: 200px;
+    background: navy;
+    color:  white;
+    font-size: 24px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    padding: 25px;
+}
+.b{
+    font-weight: bold;
+}
+.support-container{
+    margin: 150px;
+    
+}
+.support-container h1{
+    font-size: 48px;
+    color: white;
+    padding: 5px 15px;
+    background: navy;
+    width: fit-content;
+    margin: 25px auto;
+    
+}
+.support-form{
+    border-radius: 5px;
+    background: #f2f2f2;
+    padding: 20px;
+    
+}
+.support-form label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 18px;
+}
+.support-form input[type=text], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: inherit;
+}
+.col-25{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-75{
+    float: left;
+    width:  75%;
+    margin-top: 6px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.support-form input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 6px;
+    cursor: pointer;
+    float: right;
+    transition: background-color .5s ease-out
+}
+.support-form input[type=submit]:hover{
+    background-color: #7fd17f;
+}
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .contact-flex{
+        flex-wrap: wrap;
+    }
+    iframe{
+        height: 330px;
+        width:440px
+    }
 }

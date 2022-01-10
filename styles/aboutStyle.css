@@ -8,6 +8,7 @@
     position: absolute;
     color: white;
     font-family: monospace;
+    background: rgba(0,0,0,.7);
     font-size: 3vw;
     text-transform: uppercase;
 }

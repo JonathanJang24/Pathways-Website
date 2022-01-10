@@ -4,11 +4,8 @@ body, html {
 
 .cg-header{
     margin: 0;
-
     background-image: url(../public/cg/cg-header.jpg);
-
     width:100%;
-
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,11 +14,12 @@ body, html {
 }
 
 .cg-header h1{
-    padding: 60px;
     width:fit-content;
-    margin: 0 auto;
+    margin: 80px auto 25px auto;
     font-size: 64px;
+    font-family: monospace;
     text-align: center;
+    background: rgba(0,0,0,.7);
 }
 
 .cg-header p{
