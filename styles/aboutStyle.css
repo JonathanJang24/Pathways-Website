@@ -20,7 +20,7 @@
 }
 
 #belief-container{
-    margin: 50px 0 50px 0;
+    margin: 100px 0;
     display: flex;
     align-items: center;
     flex-flow:wrap-reverse;
@@ -32,12 +32,11 @@
 #belief-text{
     padding:15px;
     text-align: center;
-    background: navy;
-    height:600px;
-    width: 600px;
+    background: #415ba8;
+    height:500px;
+    width: 500px;
     color: white;
     font-size: 22px;
-    box-shadow: -20px -20px teal;
 }
 
 #belief-text a{
@@ -49,18 +48,50 @@
 }
 
 #belief-text h1{
-    font-size: 54px;
+    font-size: 50px;
     margin:10px 0 0 0
 }
 
 #belief-text p{
-    font-size: 34px;
+    font-size: 28px;
     margin:10px 0 0 0
 }
 
 #belief-container img{
-    width:500px
+    width:500px;
+    box-shadow: 20px -20px #9B9ECE;
 }
+
+.faith{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+    flex-flow:wrap-reverse;
+}
+.faith img{
+    width: 500px;
+    box-shadow: -20px -20px #9B9ECE;
+}
+.faith-text{
+    height: 500px;
+    width: 500px;
+    background: #415ba8;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+.faith-text h1{
+    font-size: 50px;
+    margin: 10px 0
+}
+.faith-text p{
+    font-size: 27px;
+    margin: 10px 0;
+}
+
+
 #about-grid{
     display: grid;
     grid-template-columns: auto repeat(auto-fill, 350px) auto;
@@ -87,7 +118,7 @@
     border-radius: 10px;
     padding: 0;
     margin: 0;
-    height: 700px;
+    height: fit-content;
     width: 350px;
     background-color: lightblue;
     transition: transform .25s ease-out;
@@ -195,47 +226,76 @@
 }
 
 @media screen and (max-width:600px){
+    #leadership{
+        width: 100%;
+        font-size: 3vw;
+    }
+    #about-grid{
+        grid-template-rows: repeat(3, auto);
+    }
+    #about-grid div{
+        border-radius: 10px;
+        height: fit-content;
+        width: 90%;
+    }
+    #about-grid h1{
+        font-size: 5vw;
+    }
+    #about-grid p{
+        font-size: 3vw
+    }
     #belief-container{
         gap: 10px
     }
     .pastor-container{
         gap: 10px;
+        box-sizing: border-box;
+        width: 100%;
     }
     .pastor-text{
-        width: 300px
+        width: 60%;
+        height:fit-content
     }
     .pastor-container img{
-        width: 100px;
+        width: 30%;
+        height: fit-content
     }
     .pastor-container h1{
-        font-size: 12px;
+        font-size: 5vw;
     }
     .pastor-container h2{
-        font-size: 10px;
+        font-size: 4vw;
     }
     .pastor-container p{
-        font-size: 8px;
+        font-size: 3vw;
     }
     #belief-text{
-        height:200px;
-        width:200px;
-        box-shadow: -10px -10px teal;
+        width:90%;
+        height:fit-content
     }
     #belief-text h1{
-        font-size: 14px;
+        font-size: 5vw;
     }
     #belief-text p{
-        font-size: 10px;
+        font-size: 3vw;
     }
     #belief-container img{
-        width: 200px
+        width: 90%
+    }
+    .faith-text{
+        width:90%;
+        height: fit-content;
+    }
+    .faith-text h1{
+        font-size: 5vw;
+    }
+    .faith-text p{
+        font-size: 3vw;
+    }
+    .faith img{
+        width: 90%
     }
     #top-container img{
         width: 100%
-    }
-}
-@media screen and (max-width: 460px){
-    .pastor-container{
-        width: 200px
     }
 }

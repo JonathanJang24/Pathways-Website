@@ -192,6 +192,22 @@ footer div h2{
 }
 
 @media screen and (max-width: 600px) {
+    footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: (3, auto);
+    }
+    #footer-hours{
+    grid-column: 1;
+    grid-row: 1;
+    }
+    #footer-contact{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #footer-newsletter{
+        grid-column: 1;
+        grid-row: 3;
+    }
     footer h2{
     font-size: 16px;
     }
@@ -205,9 +221,11 @@ footer div h2{
         font-size: 8px;
     }
     .newsletter-input{
-        width: 100px;
+        width: 50%;
+        font-size: 3vw;
     }
     #subscribe{
         font-size: 10px;
+        width: 40%
     }
 }

@@ -7,4 +7,3 @@ To acommodate for an outdated website with incorrect information, the website cr
 - HTML
 - Vanilla CSS
 - Vanilla JS
-- PHP
