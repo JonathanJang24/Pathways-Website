@@ -1,5 +1,9 @@
 body{
-    background: rgb(54, 54, 54)
+    background: rgb(54, 54, 54);
+        overflow: none;
+}
+html{
+    overflow: none;
 }
 
 .banner-container{
@@ -35,7 +39,7 @@ body{
 .ministry-container{
     margin: 200px 50px;
     display: grid;
-    grid-template-columns: 500px 1fr 400px 1fr 500px;
+    grid-template-columns: 400px 1fr 400px 1fr 400px;
     grid-template-rows: 400px 300px 400px 300px 400px 300px 400px 300px 400px 300px 400px 300px 400px 300px 400px;
 }
 .line{
@@ -54,10 +58,12 @@ body{
     margin: auto 0;
 }
 .size{
-    width: 500px;
+    width: 400px;
 }
 .isize{
-    width: 400px
+    width: 400px;
+    border-radius: 10px;
+    transition: transform .1s linear;
 }
 #wc-pic{
     grid-row: 1;
@@ -69,7 +75,7 @@ body{
     grid-column: 3;
     overflow: hidden;
 }
-#fp-pic{
+#f-pic{
     grid-row: 5;
     grid-column: 3;
     overflow: hidden;
@@ -100,7 +106,11 @@ body{
     overflow: hidden;
 }
 .text-box h1{
-    font-size: 32px;
+    font-size: 30px;
+    margin: 15px 0 0 0;
+}
+.text-box h2{
+    margin: 8px;
 }
 .text-box p{
     font-size: 20px;
@@ -111,6 +121,7 @@ body{
     margin: auto 0;
     color: white;
     text-align: center;
+    padding:10px
 }
 span{
     font-style: italic;
@@ -123,7 +134,7 @@ span{
     grid-column: 5;
     grid-row: 3;
 }
-#fp-text{
+#f-text{
     grid-column: 1;
     grid-row: 5;
 }
@@ -158,7 +169,7 @@ span{
     background: beige;
     height:4800px;
 }
-@media screen and (max-width:1320px){
+@media screen and (max-width:1400px){
     .size{
         width: 300px
     }
@@ -170,7 +181,7 @@ span{
     }
     .ministry-container{
         grid-template-columns: 300px auto 200px auto 300px;
-        grid-template-rows: 200px 150px 200px 150px 200px 150px 200px 150px 200px 150px 200px 150px 200px;
+        grid-template-rows: 200px 150px 200px 150px 200px 150px 200px 150px 200px 150px 200px 150px 200px 150px 200px;
     }
     .text-box h1{
         font-size: 18px;
@@ -204,7 +215,7 @@ span{
     }
     .ministry-container{
         grid-template-columns: 30% auto 200px auto 30%;
-        grid-template-rows: repeat(13, 200px)
+        grid-template-rows: repeat(15, 200px)
     }
     .ministry-container img{
         width: 200px
@@ -233,7 +244,7 @@ span{
         grid-template-columns: 100%;
         grid-template-rows: repeat(23, 200px);
         justify-items: center;
-        gap: 10px;
+        gap: 5vh;
         margin: 100px 5%;
     }
     #wc-pic{
@@ -246,7 +257,7 @@ span{
         grid-column: 1;
         overflow: hidden;
     }
-    #fp-pic{
+    #f-pic{
         grid-row: 7;
         grid-column: 1;
         overflow: hidden;
@@ -284,7 +295,7 @@ span{
         grid-column: 1;
         grid-row: 5;
     }
-    #fp-text{
+    #f-text{
         grid-column: 1;
         grid-row: 8;
     }

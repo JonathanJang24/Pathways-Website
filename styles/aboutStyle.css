@@ -16,7 +16,7 @@
 #top-container img{
     z-index: -1;
     width: 100%;
-    filter: brightness(40%)
+    filter: brightness(60%)
 }
 
 #belief-container{
@@ -114,13 +114,13 @@
 }
 
 #about-grid div{
-    border: 8px solid salmon;
+    border: 8px solid #26386e;
     border-radius: 10px;
     padding: 0;
     margin: 0;
-    height: fit-content;
+    height: 600px;
     width: 350px;
-    background-color: lightblue;
+    background-color: #2660a3;
     transition: transform .25s ease-out;
     text-align: center;
     color: white
