@@ -176,11 +176,14 @@
 #leadership{
     text-align: center;
     margin: 50px auto;
+    padding: 8px;
     font-weight: bold;
-    background: rgba(11, 166, 255, 0.425);
+    background: rgb(80, 120, 190);
     width: fit-content;
     font-size: 50px;
     color: white;
+    transform:scale(100%);
+    transition: transform .05s linear, background .25s linear
 }
 
 .pastor-container{
