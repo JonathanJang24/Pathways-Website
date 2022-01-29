@@ -83,7 +83,7 @@ html, body{
 
 @media screen and (max-width: 600px){
     .topnav{display:block}
-    .topnav.responsive {position:relative}
+    .topnav.responsive {position:sticky}
     .topnav a{
         margin-top: 0;
     }

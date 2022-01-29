@@ -33,7 +33,7 @@ html{
     position: absolute;
     padding-top: 240px;
     font-size: 32px;
-    margin: 10px 8vw;
+    margin: 10px 8%;
 }
 
 .ministry-container{
@@ -167,7 +167,7 @@ span{
     width: 2px;
     z-index: -1;
     background: beige;
-    height:4800px;
+    height:5400px;
 }
 @media screen and (max-width:1400px){
     .size{

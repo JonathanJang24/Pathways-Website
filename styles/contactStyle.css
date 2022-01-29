@@ -11,7 +11,7 @@
 }
 .intro-container h1{
     position: absolute;
-    font-size: 64px;
+    font-size: 8vw;
     background: rgba(0,0,0,.7);
     font-family: monospace;
 }

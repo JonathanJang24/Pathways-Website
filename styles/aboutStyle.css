@@ -230,7 +230,6 @@
 
 @media screen and (max-width:600px){
     #leadership{
-        width: 100%;
         font-size: 3vw;
     }
     #about-grid{
@@ -261,6 +260,7 @@
     }
     .pastor-container img{
         width: 30%;
+        height: 30%;
         height: fit-content
     }
     .pastor-container h1{
