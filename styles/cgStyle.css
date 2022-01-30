@@ -135,6 +135,12 @@
 }
 
 @media screen and (max-width: 750px){
+    .cg-header h1{
+        font-size: 3vw;
+    }
+    .cg-header p{
+        font-size: 1vw;
+    }
     .cg-grid{
         margin: 15px auto;
         grid-template-columns: repeat(6,75px);
