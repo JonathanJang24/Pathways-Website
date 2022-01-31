@@ -20,6 +20,7 @@
 }
 
 .cg-header p{
+    width:fit-content;
     padding: 0 50px 150px 50px;
     margin: 20px auto;
     font-size: 32px;
@@ -136,10 +137,10 @@
 
 @media screen and (max-width: 750px){
     .cg-header h1{
-        font-size: 3vw;
+        font-size: 5vw;
     }
     .cg-header p{
-        font-size: 1vw;
+        font-size: 3vw;
     }
     .cg-grid{
         margin: 15px auto;
@@ -151,9 +152,6 @@
     }
     .grid-el img{
         width: 150px;
-    }
-    .cg-header p{
-        font-size: 18px;
     }
 }
 
